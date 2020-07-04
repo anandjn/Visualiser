@@ -1,21 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" type = "text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type = "text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type = "text/css" href="vendors/css/Glyphter.css">
+        
+        
+        <link rel="stylesheet" type = "text/css" href="resources/css/style.css">
 		<title>
 			Visualiser
 		</title>
 	</head>
 
 	<body>
-		<p>This is <strong>Visualiser's</strong> Control Panel</p>
-        <div>
-            <a href ="#"> Home Lights </a>
-        </div>
-        <div>
-            <a href ="#"> Disk Lights </a>
-        </div>
-        <div>
-            <a href ="#"> Game Lights </a>
-        </div>
+        <header>
+            <h1>Visualiser's Control Panel</h1>
+            
+            
+            
+            <div class="main-box light-box" >
+                <div class="switch-mode">
+<!--                    <img class= "icon-down" src="resources/icon/mic.svg">-->
+                    <i class="icon day icon-sun"></i>
+                    <label class="switch">
+                      <input id ="switch-mode" type="checkbox" onclick="changeMode()">
+                      <span class="slider"></span>
+                    </label>
+                    <i class="icon night icon-moon"></i>
+                </div>
+                
+                <div class="audio-input row">
+                        <ul class="audio-options">
+                            <li><a class ="btn light" href ="#"><p class="icon-font">C</p><br> <p>AUX</p> </a></li>
+                            <li><a class ="btn light" href ="#"><p class="icon-font">D</p> <br> <p>MIC</p> </a></li>
+                        </ul>
+                </div>
+                
+                <div class="division light-division"></div>
+                
+                <div class="main-options row">
+                    <ul class="light-option">
+                        <li><a class = "btn light" href ="#">SEASONS</a></li>
+                        <li><a class = "btn light" href ="#">MOODS</a></li>
+                        <li><a class = "btn light" href ="#">GAMING</a></li>
+                        <li><a class = "btn light" href ="#">CUSTOM</a></li>
+                    
+                    </ul>
+                </div>
+                
+                <div class="division light-division"></div>
+                
+                <div class="extra-options row">
+                    <div class="setting">
+                        <a class = "btn light" href ="#">SETTINGS</a>                    
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        
+        <script src="resources/script/script.js"></script>
 	</body>
 <html>
