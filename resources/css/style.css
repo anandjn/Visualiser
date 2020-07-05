@@ -41,7 +41,16 @@ html, body {
     background-color: var(--page-color);
 
 }
+/*
+body{
+    display: grid;
+}
 
+header, section {
+    grid-column: 1;
+    grid-row: 2;
+}
+*/
 /*******BASIC-RULES*********/
 
 ul { 
@@ -69,6 +78,15 @@ br {
 /*-------------------------------------*/
 /* REUSABLE COMPONENTS */
 /*-------------------------------------*/
+
+.main-box {
+/*    visibility: hidden;*/
+    display: block;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    padding-top: 10px;
+}
 
 /*---------------UP-------------*/
 /*--------------DARK-------------*/
@@ -193,12 +211,8 @@ p {
 
 /*-Main-box-*/
 
-.main-box {
+.header{
     display: block;
-    width: 500px;
-    height: 600px;
-    margin: auto;
-    padding-top: 10px;
 }
 
 /*-switch-mode-*/
@@ -311,3 +325,10 @@ input:checked + .slider:before {
     margin-top: -18px;
 }
 
+/*-------------------------------------*/
+/* SEASONS */
+/*-------------------------------------*/
+
+.section-seasons {
+    display: none;
+}

@@ -15,20 +15,21 @@
 	</head>
 
 	<body>
+        <h1>Visualiser's Control Panel</h1>
         <header>
-            <h1>Visualiser's Control Panel</h1>
             
             
             
-            <div class="main-box light-box" >
+            
+            <div class="main-box light-box" id="myHeader">
                 <div class="switch-mode">
-<!--                    <img class= "icon-down" src="resources/icon/mic.svg">-->
-                    <i class="icon day icon-sun"></i>
+               
+                    <i class="icon day icon-sun" onclick="ChangeModetoDay()"></i>
                     <label class="switch">
                       <input id ="switch-mode" type="checkbox" onclick="changeMode()">
                       <span class="slider"></span>
                     </label>
-                    <i class="icon night icon-moon"></i>
+                    <i class="icon night icon-moon" onclick="ChangeModetoNight()"></i>
                 </div>
                 
                 <div class="audio-input row">
@@ -42,7 +43,7 @@
                 
                 <div class="main-options row">
                     <ul class="light-option">
-                        <li><a class = "btn light" href ="#">SEASONS</a></li>
+                        <li><a class = "btn light" href ="#" onclick="openSeasons()">SEASONS</a></li>
                         <li><a class = "btn light" href ="#">MOODS</a></li>
                         <li><a class = "btn light" href ="#">GAMING</a></li>
                         <li><a class = "btn light" href ="#">CUSTOM</a></li>
@@ -60,6 +61,24 @@
                 
             </div>
         </header>
+        
+        
+        <section class = "section-seasons" id ="mySeasons">
+            
+            <div class="main-box light-box">
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id convallis est. Nunc porta nisl at lorem laoreet imperdiet. Pellentesque magna eros, condimentum non dolor viverra, elementum dignissim nisi. Praesent bibendum euismod ante, quis porta mi facilisis a. Aliquam erat volutpat. Praesent est eros, eleifend a tortor at, pellentesque posuere enim. Morbi ullamcorper nibh felis, eu elementum sapien eleifend id. Vestibulum vestibulum porttitor eros ut ornare. Maecenas maximus mauris ac urna gravida, at facilisis lacus ornare. Vivamus sit amet arcu sagittis urna fringilla commodo vitae vel nisl. Sed imperdiet non turpis id bibendum. Vivamus imperdiet, magna quis consectetur egestas, ipsum ante tempor risus, eget lacinia est quam ac mi.</p>
+                <div class="main-options row">
+                    <ul class="light-option">
+                        <li><a class = "btn light" href ="#">WINTER</a></li>
+                        <li><a class = "btn light" href ="#" onclick="goHome()">GO-BACK</a></li>
+                    
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </section>
         
         <script src="resources/script/script.js"></script>
 	</body>
